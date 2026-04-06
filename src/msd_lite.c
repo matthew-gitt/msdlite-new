@@ -348,11 +348,7 @@ main(int argc, char *argv[]) {
 	    "threadPool", NULL)) {
 		tp_settings_load_xml(data, data_size, &tp_s);
 	}
-	error = tp_create(&tp_s, &params, &tp);
-	if (0 != error) {
-		SYSLOG_ERR(LOG_CRIT, error, "tp_create().");
-		goto err_out;
-	}
+
 	tp_threads_create(tp, 1); /* XXX exit rewrite. */
 
 
