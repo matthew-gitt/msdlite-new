@@ -1,0 +1,4 @@
+[submodule "src/liblcb"]
+	path = src/liblcb
+	url = https://github.com/matthew-gitt/liblcb.git
+                branch = 90984b87e6699f9d8a5841cd9cf075b2468533d0
